@@ -22,4 +22,6 @@ export const Navbar = () => (
         <button className="hover:scale-110 transition"><Moon size={18} /></button>
       </div>
       <button className="md:hidden"><Menu /></button>
-    </div>git add .
+    </div>
+  </nav>
+);

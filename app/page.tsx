@@ -1,6 +1,6 @@
-import { Navbar } from '../components/Navbar';
-import { Hero } from '../components/Hero';
-import PostCard from '../components/PostCard'; // 前回提示したコンポーネント
+import { Navbar } from '@/components/Navbar';
+import { Hero } from '@/components/Hero';
+import PostCard from '@/components/PostCard';
 
 export default function HomePage() {
   const posts = [
