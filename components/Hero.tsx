@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from 'framer-motion';
+
 export const Hero = () => (
   <section className="pt-32 pb-20 px-6">
     <div className="max-w-7xl mx-auto">

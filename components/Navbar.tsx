@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from 'framer-motion';
 import { Search, Moon, Menu } from 'lucide-react';
 
@@ -13,15 +15,15 @@ export const Navbar = () => (
       </motion.div>
       <div className="hidden md:flex gap-8 items-center text-sm font-medium">
         {['Latest', 'Archive', 'About'].map((item) => (
-          <a key={item} href={`#${item.toLowerCase()}`} className="hover:text-blue-500 transition-colors">
+          <a key={item} href={`#${item.toLowerCase()}`} className="hover:text-blue-500 transition-colors text-gray-600 dark:text-gray-300">
             {item}
           </a>
         ))}
         <div className="h-4 w-[1px] bg-gray-300 dark:bg-gray-700 mx-2" />
-        <button className="hover:scale-110 transition"><Search size={18} /></button>
-        <button className="hover:scale-110 transition"><Moon size={18} /></button>
+        <button className="hover:scale-110 transition p-2"><Search size={18} /></button>
+        <button className="hover:scale-110 transition p-2"><Moon size={18} /></button>
       </div>
-      <button className="md:hidden"><Menu /></button>
+      <button className="md:hidden p-2"><Menu /></button>
     </div>
   </nav>
 );
